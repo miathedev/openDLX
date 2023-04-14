@@ -17,3 +17,5 @@ bin/
 /.settings
 /.project
 /lib_local
+target/
+.vscode/

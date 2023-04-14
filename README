@@ -2,7 +2,7 @@ openDLX v1.0 - A DLX/MIPS processor simulator.
 Copyright (C) 2013 The openDLX project, University of Augsburg
 
 Core contributors: Stefan Metzlaff, Alexander Vogelgsang, and Nico Krezic-Luger
-Contributors: Arne Garbade, Patrick Lehner
+Contributors: Arne Garbade, Patrick Lehner, Mia Metzler
 
 Project URL: <http://sourceforge.net/projects/opendlx>
 Development branch: <https://github.com/smetzlaff/openDLX>
@@ -12,29 +12,14 @@ Development branch: <https://github.com/smetzlaff/openDLX>
 Requirements
 ----------------------------
 
-- Java 7
-- ant-doxygen >= 1.6.1
-- apache-log4j = 1.2.17
-
-----------------------------
-Install Dependencies
-----------------------------
-
-- Obtain ant-doxygen from 
-  http://sourceforge.net/projects/ant-doxygen 
-  and extract to lib_local/ant-doxygen
-- Obtain apache-log4j from 
-  http://logging.apache.org/log4j/1.2/download.html 
-  and extract to lib_local/apache-log4j-1.2.17
+- Java 8
+- Maven for development
 
 ----------------------------
 Building
 ----------------------------
 
-1. Install dependencies.
-
-2. Just use the provided ant script 
-   build.xml and call "ant build_and_package".
+1. mvn package
 
 
 ----------------------------
