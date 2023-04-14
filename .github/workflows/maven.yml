@@ -31,5 +31,16 @@ jobs:
       run: mvn -B package --file pom.xml
 
     #ZIP the build, including the target/*jar-with-dependencies.jar file and img folder
+    #Name zip with the current date and time and openDLX name
     - name: Zip the build
-      run: zip -r build.zip target/*jar-with-dependencies.jar img
+      run: zip -r openDLX-$(date +%Y-%m-%d_%H-%M-%S).zip target/*jar-with-dependencies.jar img
+
+    #Upload the zip file as an artifact
+    - name: Upload artifact
+      uses: actions/upload-artifact@v2
+      with:
+        name: openDLX-$(date +%Y-%m-%d_%H-%M-%S).zip
+        path: openDLX-$(date +%Y-%m-%d_%H-%M-%S).zip
+    
+    
+    
