@@ -42,5 +42,14 @@ jobs:
         name: openDLX.zip
         path: openDLX.zip
     
+    #Publish release on github including zip file
+    - name: Create Release
+      uses: ncipollo/release-action@v1
+      with:
+        artifacts: "openDLX.zip"
+        bodyFile: "body.md"
+
+
+    
 
     
